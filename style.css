@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #0097e6;
+    font-family: 'Prompt', sans-serif;
+}
+h1{
+    font-size: 3rem;
+    color: white;
+
+}
+
+/* Hero */
+.splash{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url('./images/pexels-sam-forson-243138.jpg');
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: multiply;
+}
+
+/* Navbar */
+.navbar-mobile{
+    display: none;
+    position: absolute;
+    top: 0;
+    background-color: rgba(20, 43, 72, 0.63);
+    width: 100%;
+}
+.navbar-mobile a{
+    text-decoration: none;
+    color: white;
+}
+.navbar-mobile li ul{
+    max-height: 0;
+    overflow: hidden;
+    transition: all 1s ease-in-out;
+}
+.navbar-mobile ul li{
+    padding: 1rem;
+    border-bottom: 1px solid black;
+}
+.navbar-mobile li:hover ul{
+    max-height: 200px;
+}
+.sidebar{
+    position: absolute;
+    top: 0;
+    left: -130px;
+    bottom: 0;
+    width: 250px;
+    transition: all 1s ease-in-out;
+    background-color: rgba(20, 43, 72, 0.63);
+}
+.links{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 4rem 1rem;
+}
+.links a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+.sidebar:hover{
+    left: 0;
+}
+
+@media screen and (max-width: 800px) {
+    .navbar-mobile{
+        display: block;
+    }
+    .sidebar{
+        display: none;
+    }
+}
+  
