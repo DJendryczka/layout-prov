@@ -19,17 +19,17 @@
   </head>
   <body>
     <main class="splash">
-      <h1>Välkommen till våra produkter</h1>
+      <h1>Välkommen till Vindkraft</h1>
       <h2>Bästa priser i Sverige</h2>
     </main>
     <nav>
       <div class="navbar-mobile">
         <ul>
           <li>
-            <a href="#" class="mobile-menu"
+            <a href="#" class="mobile-menu" id="hamburger-button"
               ><span class="material-symbols-outlined"> menu </span></a
             >
-            <ul>
+            <ul id="hamburger-links" class="navbar-close">
               <li><a href="start.html">Start</a></li>
               <li><a href="">Produkter</a></li>
               <li><a href="">Kontakt</a></li>
@@ -37,11 +37,14 @@
           </li>
         </ul>
       </div>
+
       <div class="sidebar">
+        <div class="menu"><h3>Meny</h3></div>
         <div class="links"><a href="start.html">Start</a></div>
         <div class="links"><a href="#">Produkter</a></div>
         <div class="links"><a href="#">Kontakt</a></div>
       </div>
     </nav>
+    <script src="script.js"></script>
   </body>
 </html>

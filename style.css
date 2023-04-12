@@ -9,7 +9,9 @@ body{
 }
 h1{
     font-size: 3rem;
-    
+}
+h1, h2{
+    text-align: center;
 }
 
 /* Hero */
@@ -31,27 +33,37 @@ h1{
 /* Navbar */
 .navbar-mobile{
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
-    background-color: rgba(20, 43, 72, 0.63);
+    background-color: rgba(20, 43, 72, 0.9);
     width: 100%;
 }
 .navbar-mobile a{
     text-decoration: none;
     color: white;
 }
-.navbar-mobile li ul{
+.navbar-close{
     max-height: 0;
     overflow: hidden;
     transition: all 1s ease-in-out;
 }
 .navbar-mobile ul li{
     padding: 1rem;
-    border-bottom: 1px solid black;
+    
 }
-.navbar-mobile li:hover ul{
+/* .navbar-mobile li:hover ul{
+    max-height: 200px;
+} */
+.navbar-open{
     max-height: 200px;
 }
+.menu{
+    position: absolute;
+    top: 10px;
+    left: 160px;
+    z-index: 10;
+}
+
 .sidebar{
     position: absolute;
     top: 0;
@@ -59,13 +71,14 @@ h1{
     bottom: 0;
     width: 250px;
     transition: all 1s ease-in-out;
-    background-color: rgba(20, 43, 72, 0.63);
+    background-color: rgba(20, 43, 72, 0.9);
 }
 .links{
     display: flex;
     justify-content: start;
     align-items: center;
-    padding: 4rem 1rem;
+    margin-top: 4rem;
+    padding: 1rem;
 }
 .links a{
     text-decoration: none;
@@ -83,6 +96,9 @@ h1{
     .sidebar{
         display: none;
     }
+    .menu{
+        display: none;
+    }
 }
 /* Start */
 
@@ -90,13 +106,20 @@ h1{
     max-width: 1240px;
     margin: 0 auto;
     height: 100vh;
-    background: #0097e6;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .card{
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card h3, p{
+    color: rgb(47, 47, 47);
+    padding: 1rem;
 }
 .image-container{
     width: 90%;
@@ -108,6 +131,11 @@ h1{
 @media screen and (max-width: 800px){
     .start-container{
         flex-direction: column;
+        height: auto;
+        margin-top: 5rem;
+    }
+    .flex-first{
+        order: -1;
     }
 }
   
