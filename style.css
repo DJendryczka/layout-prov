@@ -4,13 +4,12 @@
     box-sizing: border-box;
 }
 body{
-    background: #0097e6;
     font-family: 'Prompt', sans-serif;
+    color: white;
 }
 h1{
     font-size: 3rem;
-    color: white;
-
+    
 }
 
 /* Hero */
@@ -23,9 +22,9 @@ h1{
     align-items: center;
     position: relative;
     background-image: url('./images/pexels-sam-forson-243138.jpg');
-    background-position: center;
+    background-position: bottom;
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: multiply;
 }
 
@@ -71,7 +70,7 @@ h1{
 .links a{
     text-decoration: none;
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
 }
 .sidebar:hover{
     left: 0;
@@ -83,6 +82,32 @@ h1{
     }
     .sidebar{
         display: none;
+    }
+}
+/* Start */
+
+.start-container{
+    max-width: 1240px;
+    margin: 0 auto;
+    height: 100vh;
+    background: #0097e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    flex: 1;
+}
+.image-container{
+    width: 90%;
+}
+.image-container img{
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width: 800px){
+    .start-container{
+        flex-direction: column;
     }
 }
   
