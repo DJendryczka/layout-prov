@@ -22,7 +22,7 @@ closeBtn.addEventListener("click", () => {
 
 let filterInput = document.getElementById("filter-input");
 filterInput.addEventListener("keyup", () => {
-  let searchValue = document.getElementById("filter-input").value;
+  let searchValue = document.getElementById("filter-input").value.toLowerCase();
   const listArray = document.querySelectorAll(".list-card");
   for (let i = 0; i < listArray.length; i++) {
     const curentItem = listArray[i].dataset.color;
