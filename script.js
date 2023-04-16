@@ -8,16 +8,16 @@ hamburgerButton.addEventListener("click", () => {
 
 /* Modal */
 
-const openBtn = document.getElementById("open-modal");
-const closeBtn = document.getElementById("close-modal");
+// const openBtn = document.getElementById("open-modal");
+// const closeBtn = document.getElementById("close-modal");
 
-openBtn.addEventListener("click", () => {
-  document.getElementById("overlay").style.display = "block";
-});
+// openBtn.addEventListener("click", () => {
+//   document.getElementById("overlay").style.display = "block";
+// });
 
-closeBtn.addEventListener("click", () => {
-  document.getElementById("overlay").style.display = "none";
-});
+// closeBtn.addEventListener("click", () => {
+//   document.getElementById("overlay").style.display = "none";
+// });
 /* Array and Search*/
 
 let filterInput = document.getElementById("filter-input");
